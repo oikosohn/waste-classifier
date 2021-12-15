@@ -1,0 +1,66 @@
+backbone:
+- - 1
+  - Conv
+  - - 16
+    - 3
+    - 2
+    - null
+    - 1
+    - HardSwish
+- - 1
+  - InvertedResidualv3
+  - - 3
+    - 1
+    - 16
+    - 0
+    - 0
+    - 1
+- - 1
+  - InvertedResidualv3
+  - - 3
+    - 3
+    - 24
+    - 0
+    - 0
+    - 1
+- - 1
+  - InvertedResidualv3
+  - - 5
+    - 3
+    - 40
+    - 1
+    - 0
+    - 1
+- - 1
+  - InvertedResidualv3
+  - - 3
+    - 6
+    - 80
+    - 0
+    - 1
+    - 2
+- - 1
+  - InvertedResidualv3
+  - - 5
+    - 6
+    - 80
+    - 1
+    - 1
+    - 1
+- - 1
+  - Conv
+  - - 480
+    - 1
+    - 1
+- - 1
+  - GlobalAvgPool
+  - []
+- - 1
+  - Flatten
+  - []
+- - 1
+  - Linear
+  - - 6
+depth_multiple: 1.0
+input_channel: 3
+width_multiple: 1.0
