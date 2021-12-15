@@ -15,7 +15,15 @@ pip install -r requirements.txt
 make -j 2 run_app
 ```
 
-윈도우 환경
+윈도우 
 ```
-start 
+# FastAPI 백그라운드 실행
+start /b python -m app
+
+# Streamlit 포그라운드 실행
+streamlit run app/frontend.py
+
 ```
+
+## 시연
+
