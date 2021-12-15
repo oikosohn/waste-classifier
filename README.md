@@ -24,6 +24,3 @@ start /b python -m app
 streamlit run app/frontend.py
 
 ```
-
-## 시연
-
