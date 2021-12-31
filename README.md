@@ -1,8 +1,8 @@
 # “초”경량 이미지 분류기
 
-## 환경 설정
+## 가상 환경 설정
 
-- OCR은 다른 가상환경 이름으로 대체 가능
+- OCR 대신 이름으로 대체 가능
 ```
 conda create -n OCR
 conda activate OCR
@@ -24,3 +24,6 @@ start /b python -m app
 streamlit run app/frontend.py
 
 ```
+
+## Reference
+`src` in this repo is based on Kindle(by JeiKeiLim)
