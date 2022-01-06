@@ -1,13 +1,12 @@
 # “초”경량 이미지 분류기
 
 ## 가상 환경 설정
-
-- OCR 대신 다른 이름으로 대체 가능
 ```
 conda create -n OCR
 conda activate OCR
 pip install -r requirements.txt
 ```
+- OCR 대신 다른 이름으로 대체 가능
 
 ## Streamlit, FastAPI 실행
 리눅스
