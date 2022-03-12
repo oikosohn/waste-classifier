@@ -10,13 +10,14 @@ import streamlit as st
 
 import requests
 
-# SETTING PAGE CONFIG TO WIDE MODE
 ASSETS_SRC_PATH = os.path.join(Path(__file__).parent.parent, "src")
 ASSETS_MODEL_PATH = os.path.join(Path(__file__).parent.parent, "model")
 
+# SETTING PAGE CONFIG TO WIDE MODE
 st.set_page_config(layout="wide")
 
 def main():
+
     st.title("Light weight model for recycle")
 
     st.write("재활용 쓰레기 이미지를 업로드해주세요!")
@@ -46,6 +47,5 @@ def main():
         st.write("분류 완료")
         st.write(f'이 쓰레기는 {label[0]} 입니다.')
         st.write(f'이미지 업로드부터 분류 완료까지 {end-start} 초가 걸립니다.')
-
 
 main()
