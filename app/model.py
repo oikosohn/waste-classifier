@@ -1,6 +1,6 @@
 import io
 
-from typing import List, Dict, Any, Type, Union
+from typing import List, Dict, Any
 import yaml
 from PIL import Image
 
@@ -21,12 +21,13 @@ def get_model() -> Model:
 
     model_instance = Model('model/model.yml', verbose=True)
     model_instance.model.load_state_dict(
-        torch.load('model/model.pt', map_location=torch.device("cpu"))
+        torch.load('model/best.pt', map_location=device)
     )
     model = model_instance.model
     model = model.to(device)
     
     return model
+
 
 def _transform_image(image_bytes: bytes):
     transform = albumentations.Compose(
